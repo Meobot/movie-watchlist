@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Inter';
+	display: flex;
+	justify-content: center;
+}
+
+.App {
+	width: 550px;
+	height: 779px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #121212;
+}
+
+.Header {
+	width: 100%;
+	max-width: 550px;
+	height: 208px;
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+		url(/movie-posters.png) no-repeat center fixed;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	position: absolute;
+}
+
+.Header--title {
+	font-weight: 800;
+	font-size: 42.7947px;
+	line-height: 56px;
+	display: flex;
+	align-items: center;
+	text-align: justify;
+	letter-spacing: -0.045em;
+}
+
+.Header--sub {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: right;
+}
+
+.input--container {
+	background: #2E2E2F;
+	width: 462px;
+	height: 38px;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+	top: 189px;
+}
+
+.input--mag {
+	margin: 0px 0px 0px 10px;
+}
+
+.input--field {
+	background: #2E2E2F;
+	border: 0;
+	border-radius: 6px;
+	flex: none;
+	order: 0;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 9px 13px;
+	gap: 8px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #A5A5A5;
+}
+
+.input--btn {
+	width: 120px;
+	height: 38px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 9px 11px 9px 17px;
+	gap: 8px;
+	background: #4B4B4B;
+	border-radius: 0px 6px 6px 0px;
+	border: 0;
+	cursor: pointer;
+}
