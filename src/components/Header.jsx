@@ -1,6 +1,5 @@
 
 export default function Header() {
-    console.log("Header check")
     return (
 			<div className="Header">
 				<h1 className="Header--title">Find your film</h1>
