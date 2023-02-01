@@ -1,7 +1,14 @@
+// import { useState } from "react"
+import React from 'react'
 
-export default function Card(props) {
+const MovieCard = (props) => {
     return (
-        console.log(props.apiResponse)
-
+            <div className='boop'>
+                <p>{props.Title}</p>
+                {/* <p>{props.Poster}</p>
+                <p>{props.Rating}</p> */}
+            </div>
     )
 }
+
+export default MovieCard

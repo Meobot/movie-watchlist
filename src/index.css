@@ -31,7 +31,7 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	color: white;
-	position: absolute;
+	/* position: absolute; */
 }
 
 .Header--title {
@@ -99,4 +99,8 @@ body {
 	border-radius: 0px 6px 6px 0px;
 	border: 0;
 	cursor: pointer;
+}
+
+.boop {
+	color: white;
 }
