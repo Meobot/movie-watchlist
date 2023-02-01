@@ -31,7 +31,7 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	color: white;
-	/* position: absolute; */
+	position: absolute;
 }
 
 .Header--title {
@@ -51,7 +51,7 @@ body {
 	text-align: right;
 }
 
-.input--container {
+.Search--container {
 	background: #2E2E2F;
 	width: 462px;
 	height: 38px;
@@ -64,11 +64,11 @@ body {
 	top: 189px;
 }
 
-.input--mag {
+.Search--mag {
 	margin: 0px 0px 0px 10px;
 }
 
-.input--field {
+.Search--field {
 	background: #2E2E2F;
 	border: 0;
 	border-radius: 6px;
@@ -86,7 +86,7 @@ body {
 	color: #A5A5A5;
 }
 
-.input--btn {
+.Search--btn {
 	width: 120px;
 	height: 38px;
 	display: flex;
@@ -101,6 +101,6 @@ body {
 	cursor: pointer;
 }
 
-.boop {
-	color: white;
+.Card--poster {
+	width: 70px;
 }
