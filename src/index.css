@@ -20,6 +20,13 @@ body {
 	background-color: #121212;
 }
 
+.Header--container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .Header {
 	width: 100%;
 	max-width: 550px;
@@ -31,7 +38,7 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	color: white;
-	position: absolute;
+	/* position: absolute; */
 }
 
 .Header--title {
@@ -60,8 +67,9 @@ body {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	position: relative;
-	top: 189px;
+	margin: -20px 0px 20px 0px;
+	/* position: relative; */
+	/* top: 189px; */
 }
 
 .Search--mag {
@@ -103,4 +111,8 @@ body {
 
 .Card--poster {
 	width: 70px;
+}
+
+.movie-title {
+	color: white;
 }

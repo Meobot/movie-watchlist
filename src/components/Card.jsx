@@ -8,8 +8,8 @@ const MovieCard = (props) => {
                 <img src={props.Poster} alt="movie poster" className='Card--poster'/>
             </div>
             <div className="Card--content">
-                <div className="Card--title">
-                    {/* title and rating */}
+                <div className="Card--title-container">
+                    <p className='movie-title'>{props.Title}</p>
                 </div>
                 <div className="Card--details">
                     {/* runtime, genre, watchlist button */}

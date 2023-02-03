@@ -5,19 +5,19 @@ import SearchField from "./components/Search";
 import { useState, useEffect } from "react"
 
 export default function App() {
-	const [movieData, setMovieData] = useState([])
-	const [searchValue, setSearchValue] = useState("")
+		const [movieData, setMovieData] = useState([])
+		const [searchValue, setSearchValue] = useState("")
 
-	const getMovieData = async (searchValue) => {
-	const url = `http://www.omdbapi.com/?apikey=bc882678&s=${searchValue}`
+		const getMovieData = async (searchValue) => {
+		const url = `http://www.omdbapi.com/?apikey=bc882678&s=${searchValue}`
 
-	const response = await fetch(url)
-	const responseJson = await response.json()
+		const response = await fetch(url)
+		const responseJson = await response.json()
 
-	if (responseJson.Search) {
-		setMovieData(responseJson.Search)
+		if (responseJson.Search) {
+			setMovieData(responseJson.Search)
+		}
 	}
-}
 
 	useEffect(() => {
 		getMovieData(searchValue)
@@ -34,12 +34,17 @@ export default function App() {
 
 	return (
 		<div className="App">
+			<div className="Header--container">
 		<Header />
 		<SearchField 
 			searchValue={searchValue} 
 			setSearchValue={setSearchValue}
 		/>
-		{movie}
+			</div>
+		<div className="movies--display">
+			{movie}
+		</div>
 		</div>
 	)
 }
+
